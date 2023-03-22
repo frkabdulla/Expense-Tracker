@@ -1,0 +1,34 @@
+﻿@model proj.Models.SourceOfIncome
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SourceOfIncome</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Source_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Source_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Source_Name }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
